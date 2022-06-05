@@ -1,0 +1,69 @@
+// 置中
+@mixin absolute-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  @content;
+}
+
+// 左上
+@mixin absolute-lt($left, $top) {
+  position: absolute;
+  left: $left;
+  top: $top;
+  @content;
+}
+
+// 左下
+@mixin absolute-lb($left, $bottom) {
+  position: absolute;
+  left: $left;
+  bottom: $bottom;
+  @content;
+}
+//右上
+@mixin absolute-rt($right, $top) {
+  position: absolute;
+  right: $right;
+  top: $top;
+  @content;
+}
+//右下
+@mixin absolute-rb($right, $bottom) {
+  position: absolute;
+  right: $right;
+  bottom: $bottom;
+  @content;
+}
+
+//fixed
+
+// 左上
+@mixin fixed-lt($left, $top) {
+  position: fixed;
+  left: $left;
+  top: $top;
+  @content;
+}
+// 左下
+@mixin fixed-lb($left, $bottom) {
+  position: fixed;
+  left: $left;
+  bottom: $bottom;
+  @content;
+}
+//右上
+@mixin fixed-rt($right, $top) {
+  position: fixed;
+  right: $right;
+  top: $top;
+  @content;
+}
+//右下
+@mixin fixed-rb($right, $bottom) {
+  position: fixed;
+  right: $right;
+  bottom: $bottom;
+  @content;
+}
